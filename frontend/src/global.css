@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+
+:root{
+    /*color*/
+    --black         : #000;
+    --blackMedium   : #161616;
+    --white         : #FFF;
+    --yellow        : #F9BD0B;
+    --orangeMedium  : #FD8346;
+    --blue          : #017BDB;
+    --grey          : #D0D2D6;
+
+    /*fonts*/
+    --roboto    : 'Roboto', sans-serif;
+    --fira      : 'Fira Sans', sans-serif;
+}
+
+html {box-sizing: border-box !important;  font-size: 100% !important;}
+body {font-size: 16px !important;font-size: 1rem !important;line-height: 2 !important; background:var(--black) ; font-family: var(--roboto);-webkit-font-smoothing: antialiased;}
+*, 
+*:before, 
+*:after {box-sizing: border-box;}
+
+/*
+*heading
+*/
+h1, h2, h3, h4
+{font-family: var(--firaSans) !important; margin: 1rem 0 !important; line-height: 1.2 !important;}
+h1{font-size: 6rem ;}
+h2{font-size: 4.6rem ;}
+h3{font-size: 3.2rem ;}
+h4{font-size: 2.1rem ;}
+
+/*
+*Geral
+*/
+a{text-decoration: none; font-family: var(--fira);}
+ul, 
+li{list-style: none;margin: 0;padding: 0;}
+img{max-width: 100%;height: auto;}
+hr{border: 1px solid  var(--black) !important; opacity: .3;}
+
+/*
+*Form
+*/
+input,
+button, 
+textarea{font-family: var(--roboto);}
+
+button{cursor: pointer;}
+
+form input{width: 100%; height: 60px;color: var(--blackMedium);border: 1px solid var(--grey);border-radius: 8px;padding: 0 24px;}
+
+form textarea{width: 100%; resize: vertical; min-height: 140px; height: 60px;color: var(--blackMedium);border: 1px solid var(--grey);border-radius: 8px;padding: 16px 24px;line-height: 24px;}
+
+.button{width: 100%;height: 60px;background: var(--blue);color:var(--white); border: 0;border-radius: 8px;font-weight: bold;margin-top: 16px;display: inline-block;text-align: center;text-decoration: none;font-size: 1.25rem;line-height: 60px;transition: filter .2s;}
+.button:hover{filter: brightness(90%);}
+
+/*
+*Link
+*/
+.back-link
+{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: var(--grey);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity .2;
+}
+
+.back-link svg{margin-right: 14px;}
+
+.back-linka:hover{opacity: .8;}

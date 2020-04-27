@@ -8,8 +8,8 @@ module.exports = {
         return response.json(people);
     },
     //cadastro
-    async create(request, reponse){
-        const {name, email, whatsapp, city, uf} = request.body;
+    async create(request, response){
+        const {name, email, whatsapp, phone1, phone2, city, uf} = request.body;
         const id = crypto.randomBytes(4).toString('HEX');
         //conn
         await connection('people').insert({
@@ -17,6 +17,8 @@ module.exports = {
             name, 
             email,
             whatsapp,
+            phone1,
+            phone2,
             city,
             uf,
         })

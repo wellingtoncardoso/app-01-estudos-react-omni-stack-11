@@ -5,6 +5,8 @@ exports.up = function(knex) {
         table.string('name').notNullable();
         table.string('email').notNullable();
         table.string('whatsapp').notNullable();
+        table.string('phone1');
+        table.string('phone2');
         table.string('city').notNullable();
         table.string('uf',2).notNullable();
     })
